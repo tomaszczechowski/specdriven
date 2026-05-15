@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=".github/assets/header.svg" alt="specdriven.sh — Spec Driven Development" width="100%"/>
+  <img src=".github/assets/header.svg" alt="specdriven.sh - Spec Driven Development" width="100%"/>
 </div>
 
 <p align="center">
@@ -24,9 +24,9 @@
 
 ---
 
-**Production project blueprints with AI built in.** Skip the three days of stack debates. Install an opinionated tech stack, architecture, and the AI skills paired with it — all from a single CLI command.
+**Production project blueprints with AI built in.** Skip the three days of stack debates. Install an opinionated tech stack, architecture, and the AI skills paired with it - all from a single CLI command.
 
-> **Demo:** _Asciinema cast coming soon — watch this space._
+> **Demo:** _Asciinema cast coming soon - watch this space._
 
 ## Quick Start
 
@@ -42,18 +42,18 @@ npx specdriven list spec
 npx specdriven find skill testing
 ```
 
-That's it. The CLI fetches the spec (or skill) from the public catalog and installs it into your agent's config directory — Claude Code, Cursor, Copilot, Codex, and 50+ others.
+That's it. The CLI fetches the spec (or skill) from the public catalog and installs it into your agent's config directory - Claude Code, Cursor, Copilot, Codex, and 50+ others.
 
 ## What is SDD?
 
-**Spec Driven Development (SDD)** is a methodology where AI-generated specifications drive your project from day one. Rather than bolting AI assistance onto an existing workflow, SDD treats specs as the source of truth — they describe your stack, your architecture, and the AI skills that come bundled with them.
+**Spec Driven Development (SDD)** is a methodology where AI-generated specifications drive your project from day one. Rather than bolting AI assistance onto an existing workflow, SDD treats specs as the source of truth - they describe your stack, your architecture, and the AI skills that come bundled with them.
 
 The ecosystem revolves around two primitives:
 
 | Primitive | What it is |
 |-----------|------------|
-| **Spec** | A complete project blueprint — tech stack + architecture + a bundled set of skills. Scaffold a new project from one. |
-| **Skill** | An atomic, reusable AI instruction — a prompt, workflow, or technique that works across Claude, GPT, and other agents. |
+| **Spec** | A complete project blueprint - tech stack + architecture + a bundled set of skills. Scaffold a new project from one. |
+| **Skill** | An atomic, reusable AI instruction - a prompt, workflow, or technique that works across Claude, GPT, and other agents. |
 
 Specs compose from skills. Skills work standalone. Both live in public, community-maintained catalogs.
 
@@ -84,9 +84,9 @@ specdriven --help               # top-level help
 specdriven <command> --help     # per-command help (e.g. specdriven add --help)
 ```
 
-> **`<kind>` argument** — every command takes a `kind` of either `skill` or `spec`. When optional (e.g. `add`, `init`), omitting it triggers an interactive prompt.
+> **`<kind>` argument** - every command takes a `kind` of either `skill` or `spec`. When optional (e.g. `add`, `init`), omitting it triggers an interactive prompt.
 
-### `add` — install a skill or spec
+### `add` - install a skill or spec
 
 ```bash
 specdriven add [kind] [slug] [options]
@@ -108,7 +108,7 @@ specdriven add skill review --agent cursor   # target a specific agent
 | `-f, --force` | Overwrite if the destination already exists |
 | `-y, --yes` | Skip prompts; require all args/flags |
 
-### `find` — search the catalog
+### `find` - search the catalog
 
 Partial-substring search across slug, title, description, and tags. Omit the query to list everything for the given kind.
 
@@ -122,9 +122,9 @@ specdriven find spec next           # matches "nextjs-saas", "next-blog", etc.
 specdriven find skill               # list every skill in the catalog
 ```
 
-_No options — this is a read-only search command._
+_No options - this is a read-only search command._
 
-### `list` (alias: `ls`) — browse the catalog
+### `list` (alias: `ls`) - browse the catalog
 
 Lists the catalog alphabetically, 20 entries per page. Useful when you want to scan the full library rather than search.
 
@@ -137,9 +137,9 @@ specdriven list spec
 specdriven ls skill                 # alias form
 ```
 
-_No options — output is paginated automatically._
+_No options - output is paginated automatically._
 
-### `init` — scaffold a new skill or spec
+### `init` - scaffold a new skill or spec
 
 Creates a new skill or spec from the official template, ready to author and contribute back upstream.
 
@@ -164,7 +164,7 @@ If `slug` is omitted, it defaults to `<kind>-example`.
 | `-f, --force` | Overwrite if the destination already exists |
 | `-y, --yes` | Skip prompts; require all args/flags |
 
-### `remove` (alias: `rm`) — uninstall
+### `remove` (alias: `rm`) - uninstall
 
 Removes a previously installed skill or spec from your agent's config directory. Asks for confirmation unless `--yes` is passed.
 
@@ -269,10 +269,10 @@ specdriven works with **55 AI coding agents** out of the box. Pass `--agent <id>
 
 ## Contributing
 
-This repo houses **docs and the project hub** — it doesn't accept spec or skill submissions directly. Open contributions go to the dedicated catalogs:
+This repo houses **docs and the project hub** - it doesn't accept spec or skill submissions directly. Open contributions go to the dedicated catalogs:
 
-- 📋 **[specdriven-specs](https://github.com/tomaszczechowski/specdriven-specs)** — submit a project spec ([CONTRIBUTING](https://github.com/tomaszczechowski/specdriven-specs/blob/main/CONTRIBUTING.md))
-- ⚡ **[specdriven-skills](https://github.com/tomaszczechowski/specdriven-skills)** — submit an AI skill ([CONTRIBUTING](https://github.com/tomaszczechowski/specdriven-skills/blob/main/CONTRIBUTING.md))
+- 📋 **[specdriven-specs](https://github.com/tomaszczechowski/specdriven-specs)** - submit a project spec ([CONTRIBUTING](https://github.com/tomaszczechowski/specdriven-specs/blob/main/CONTRIBUTING.md))
+- ⚡ **[specdriven-skills](https://github.com/tomaszczechowski/specdriven-skills)** - submit an AI skill ([CONTRIBUTING](https://github.com/tomaszczechowski/specdriven-skills/blob/main/CONTRIBUTING.md))
 
 Each repo has its own workflow: CI validates frontmatter and content, a maintainer reviews, and on merge your contribution syncs to [specdriven.sh](https://specdriven.sh) within an hour.
 
@@ -290,8 +290,8 @@ If specdriven saves you time, consider supporting development:
 
 ## Status
 
-**v0.x — actively developed.** Expect breaking changes between minor releases; pin versions for production use.
+**v0.x - actively developed.** Expect breaking changes between minor releases; pin versions for production use.
 
 ## License
 
-[MIT](./LICENSE) — Copyright (c) 2026 Tomasz Czechowski.
+[MIT](./LICENSE) - Copyright (c) 2026 Tomasz Czechowski.
