@@ -12,6 +12,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/tomaszczechowski/specdriven-specs"><img src="https://img.shields.io/badge/%F0%9F%93%8B_Browse_Specs-22d3ee?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" alt="Browse Specs"/></a>
+  <a href="https://github.com/tomaszczechowski/specdriven-skills"><img src="https://img.shields.io/badge/%E2%9A%A1_Browse_Skills-fbbf24?style=for-the-badge&logo=github&logoColor=0a0a0a&labelColor=0a0a0a" alt="Browse Skills"/></a>
+  <a href="https://specdriven.sh"><img src="https://img.shields.io/badge/%F0%9F%8C%90_Live_Catalog-f5f5f5?style=for-the-badge&logoColor=0a0a0a&labelColor=0a0a0a" alt="Live Catalog"/></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/sponsors/tomaszczechowski"><img src="https://img.shields.io/badge/Sponsor-on%20GitHub-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor"/></a>
   <a href="https://www.buymeacoffee.com/tomaszczechowski"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-fbbf24?style=for-the-badge&logo=buymeacoffee&logoColor=0a0a0a" alt="Buy Me a Coffee"/></a>
 </p>
