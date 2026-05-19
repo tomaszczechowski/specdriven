@@ -1,0 +1,6 @@
+# Sponsorship options — surfaces a Sponsor button on the GitHub repo page.
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+github: tomaszczechowski
+custom:
+  - https://www.buymeacoffee.com/tomaszczechowski
