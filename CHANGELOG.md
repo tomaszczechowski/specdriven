@@ -12,9 +12,9 @@ All notable changes to the specdriven CLI are documented here.
 
 ### Added
 
-- Skills are now bundled inside their parent spec. When you `add spec <slug>`, any internal skills under the spec's `skills/` subdirectory are installed along with it.
-- External skills declared in a spec's `specdriven-metadata.json` are materialised as small pointer files (`skills/<name>.external.md`) containing the source URL, author, and a one-line description — no fetching, no scraping.
-- Spec install summary now reports how many internal skills were bundled and how many external pointer files were written.
+- Skills are now bundled inside their parent spec. When you `add <slug>`, any internal skills under the spec's `skills/` subdirectory are installed along with it.
+- External skills declared in a spec's `specdriven-metadata.json` are printed after a successful install as a list of `npx skills add ...` commands users can copy-paste — no scraping, no in-CLI subprocess, and no third-party runtime dependency. Skill installation runs through the open `skills` ecosystem CLI on demand.
+- Spec install summary now reports the number of bundled internal skills and lists paired external skills with their install commands.
 
 ### Changed
 
