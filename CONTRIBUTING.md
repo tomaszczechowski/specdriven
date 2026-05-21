@@ -6,32 +6,34 @@ Thanks for considering a contribution! This repo is the **docs hub** for the pro
 
 | You want to... | Submit to |
 |----------------|-----------|
-| Add a new **skill** | [`specdriven-skills`](https://github.com/tomaszczechowski/specdriven-skills) |
-| Add a new **spec** | [`specdriven-specs`](https://github.com/tomaszczechowski/specdriven-specs) |
+| Add a new **spec** (or a bundled skill inside one) | [`specdriven-specs`](https://github.com/tomaszczechowski/specdriven-specs) |
 | Improve **website pages** | [`specdriven-website`](https://github.com/tomaszczechowski/specdriven-website) |
 | Report a **CLI bug** or request a feature | [Open an issue here](https://github.com/tomaszczechowski/specdriven/issues) — the CLI source is in a private repo |
 | Fix a typo in **this README / hub docs** | This repo |
 
-## Catalog submissions (skills & specs)
+## Spec submissions
 
-Each catalog has its own contributor guide:
+The catalog has its own contributor guide: **[specdriven-specs/CONTRIBUTING.md](https://github.com/tomaszczechowski/specdriven-specs/blob/main/CONTRIBUTING.md)**.
 
-- 📋 **[specdriven-specs/CONTRIBUTING.md](https://github.com/tomaszczechowski/specdriven-specs/blob/main/CONTRIBUTING.md)**
-- ⚡ **[specdriven-skills/CONTRIBUTING.md](https://github.com/tomaszczechowski/specdriven-skills/blob/main/CONTRIBUTING.md)**
+The basics:
 
-The basics, regardless of which catalog:
-
-1. Scaffold from the template — `npx specdriven init skill my-skill` or `npx specdriven init spec my-stack`
-2. Edit the body (`SKILL.md` / `SPEC.md`) and metadata (`specdriven-metadata.json`)
-3. Run `npm run validate` to check the frontmatter and content
-4. Open a PR — CI re-runs the validator and a maintainer reviews within 48 hours
+1. Scaffold from the template — `npx specdriven init my-stack`
+2. Edit `SPEC.md` (the body) and `specdriven-metadata.json` (catalog metadata)
+3. Optionally bundle internal skills under `skills/<name>/` or reference external ones via `skills.external` in the metadata
+4. Run `npm run validate` to check the frontmatter and content
+5. Open a PR — CI re-runs the validator and a maintainer reviews within 48 hours
 
 ## Hosting modes — internal vs external
 
-When submitting a skill or spec, you choose between two hosting modes:
+A spec itself can be hosted in one of two modes:
 
 - **Internal** — full content lives in the catalog repo. Best for atomic, community-curated contributions.
 - **External** — metadata-only entry in the catalog with a `source` field pointing to your own GitHub repo. Best when you maintain a larger project elsewhere.
+
+Skills paired with a spec follow a similar pattern:
+
+- **Internal skills** — bundled under `skills/<name>/` inside the spec directory. Installed alongside the spec automatically.
+- **External skills** — declared in `specdriven-metadata.json` under `skills.external` with a `name`, a `command` (the `npx skills add ...` invocation users run via the open [`skills` ecosystem CLI](https://www.skills.sh)), and optional `source` / `author`. The CLI prints these commands after a successful install — it never executes them itself.
 
 See [specdriven.sh/docs#internal-vs-external](https://specdriven.sh/docs#internal-vs-external) for the full explanation.
 
