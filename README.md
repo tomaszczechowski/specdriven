@@ -24,7 +24,9 @@
 
 **Production project blueprints with AI built in.** Skip the three days of stack debates. Install an opinionated tech stack, architecture, file layout, and references to the AI workflows that fit — all from a single CLI command.
 
-> **Demo:** _Asciinema cast coming soon — watch this space._
+<p align="center">
+  <img src="demo.gif" alt="Taskforge CLI demo" width="80%" />
+</p>
 
 ## Quick Start
 
