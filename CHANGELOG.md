@@ -2,6 +2,13 @@
 
 All notable changes to the specdriven CLI are documented here.
 
+## [2.0.2] - 2026-05-21
+
+### Fixed
+
+- Demo GIF added to README for npm page display.
+
+
 ## [2.0.1] - 2026-05-21
 
 ### Fixed
