@@ -2,6 +2,12 @@
 
 All notable changes to the specdriven CLI are documented here.
 
+## [2.0.1] - 2026-05-21
+
+### Fixed
+
+- Paired external skills are now correctly printed after a spec install. Previously the CLI read `specdriven-metadata.json` from the local install path, but that file is a catalog-only sidecar excluded from the install manifest, so the skills block was silently skipped. The CLI now fetches the metadata from the API at install time.
+
 ## [2.0.0] - 2026-05-20
 
 ### Breaking changes
