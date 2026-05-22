@@ -2,6 +2,12 @@
 
 All notable changes to the specdriven CLI are documented here.
 
+## [2.0.3] - 2026-05-22
+
+### Changed
+
+- README cleaned up to reflect the spec-only CLI: removed all `skill` and `kind` references from the description, Quick Start examples, and commands table.
+
 ## [2.0.2] - 2026-05-21
 
 ### Fixed
